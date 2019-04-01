@@ -3,14 +3,11 @@
 //  Ents
 //
 //  Created by Georges Boumis on 29/08/2016.
-//  Copyright © 2016-2019 Georges Boumis.
+//  Copyright © 2016-2017 Georges Boumis.
 //  Licensed under MIT (https://github.com/averello/Ents/blob/master/LICENSE)
 //
 
 import Foundation
-#if canImport(CoreGraphics) && canImport(QuartzCore)
-import CoreGraphics
-import QuartzCore
 
 extension CGAffineTransform {
     
@@ -29,5 +26,3 @@ extension CGAffineTransform {
         self = self.concatenating(t)
     }
 }
-
-#endif

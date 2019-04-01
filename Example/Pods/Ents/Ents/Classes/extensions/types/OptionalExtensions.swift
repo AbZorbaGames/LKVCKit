@@ -3,7 +3,7 @@
 //  Ents
 //
 //  Created by Georges Boumis on 11/08/2016.
-//  Copyright © 2016-2019 Georges Boumis.
+//  Copyright © 2016-2017 Georges Boumis.
 //  Licensed under MIT (https://github.com/averello/Ents/blob/master/LICENSE)
 //
 
@@ -12,7 +12,7 @@ import Foundation
 public extension Optional {
     
     /// indicates wether the Wrapped value is `nil`.
-    public var optional: Bool {
+    var optional: Bool {
         if let _ = self {
             return false
         }
@@ -22,23 +22,23 @@ public extension Optional {
     }
 
     /// indicates wether the Wrapped value is not `nil`.
-    public var nonOptional: Bool {
+    var nonOptional: Bool {
         return not(self.optional)
     }
 
     /// returns the wrapped value or the default if the wrapped value is `nil`.
-    public func unwrap(defaultValue value: Wrapped) -> Wrapped {
+    func unwrap(defaultValue value: Wrapped) -> Wrapped {
         return self ?? value
     }
     
     /// converts an optional to a concrete value
-    public mutating func materialize(_ materialize: () throws -> Wrapped) rethrows {
+    mutating func materialize(_ materialize: () throws -> Wrapped) rethrows {
         if self.optional {
             self = try materialize()
         }
     }
 
-    public var optionalDescription: String {
+    var optionalDescription: String {
         guard let a = self else { return String(describing: self) }
         return String(describing: a)
     }

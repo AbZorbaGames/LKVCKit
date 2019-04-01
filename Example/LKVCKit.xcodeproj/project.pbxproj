@@ -7,19 +7,19 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		5C27AAE8545EEDCF79AA11EF /* Pods_LKVCKit_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AC079EE9BC2063566FF4D20D /* Pods_LKVCKit_Tests.framework */; };
+		163CF68C8C689D108B9DA335 /* Pods_LKVCKit_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 31A7E556C2AE51F9891C5C65 /* Pods_LKVCKit_Tests.framework */; };
 		607FACEC1AFB9204008FA782 /* Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACEB1AFB9204008FA782 /* Tests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		045F7F19F42BF81F6BFF1E21 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
-		269FF0E1855CF07A035DEE65 /* Pods-LKVCKit_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LKVCKit_Tests.debug.xcconfig"; path = "Target Support Files/Pods-LKVCKit_Tests/Pods-LKVCKit_Tests.debug.xcconfig"; sourceTree = "<group>"; };
+		31A7E556C2AE51F9891C5C65 /* Pods_LKVCKit_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LKVCKit_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		607FACE51AFB9204008FA782 /* LKVCKit_Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LKVCKit_Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		607FACEA1AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		607FACEB1AFB9204008FA782 /* Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests.swift; sourceTree = "<group>"; };
 		663BE6B37BF898600335C123 /* LKVCKit.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LKVCKit.podspec; path = ../LKVCKit.podspec; sourceTree = "<group>"; };
-		AC079EE9BC2063566FF4D20D /* Pods_LKVCKit_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LKVCKit_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		BA7913FD31A20785EDC639DC /* Pods-LKVCKit_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LKVCKit_Tests.release.xcconfig"; path = "Target Support Files/Pods-LKVCKit_Tests/Pods-LKVCKit_Tests.release.xcconfig"; sourceTree = "<group>"; };
+		CC0481A78D0C876C95B27B81 /* Pods-LKVCKit_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LKVCKit_Tests.debug.xcconfig"; path = "Target Support Files/Pods-LKVCKit_Tests/Pods-LKVCKit_Tests.debug.xcconfig"; sourceTree = "<group>"; };
+		DF58D317E47BF428EF6A2569 /* Pods-LKVCKit_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LKVCKit_Tests.release.xcconfig"; path = "Target Support Files/Pods-LKVCKit_Tests/Pods-LKVCKit_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		EE4E24616F6F940341CE957F /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -28,17 +28,17 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5C27AAE8545EEDCF79AA11EF /* Pods_LKVCKit_Tests.framework in Frameworks */,
+				163CF68C8C689D108B9DA335 /* Pods_LKVCKit_Tests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		1FB40737059177863C3863B8 /* Frameworks */ = {
+		56CD419536B73FD7841A5D78 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				AC079EE9BC2063566FF4D20D /* Pods_LKVCKit_Tests.framework */,
+				31A7E556C2AE51F9891C5C65 /* Pods_LKVCKit_Tests.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -49,8 +49,8 @@
 				607FACF51AFB993E008FA782 /* Podspec Metadata */,
 				607FACE81AFB9204008FA782 /* Tests */,
 				607FACD11AFB9204008FA782 /* Products */,
-				EEDCB06D78E87C22BDE4F2A1 /* Pods */,
-				1FB40737059177863C3863B8 /* Frameworks */,
+				E4EB54D4CC7F887230102FDB /* Pods */,
+				56CD419536B73FD7841A5D78 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -89,11 +89,11 @@
 			name = "Podspec Metadata";
 			sourceTree = "<group>";
 		};
-		EEDCB06D78E87C22BDE4F2A1 /* Pods */ = {
+		E4EB54D4CC7F887230102FDB /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				269FF0E1855CF07A035DEE65 /* Pods-LKVCKit_Tests.debug.xcconfig */,
-				BA7913FD31A20785EDC639DC /* Pods-LKVCKit_Tests.release.xcconfig */,
+				CC0481A78D0C876C95B27B81 /* Pods-LKVCKit_Tests.debug.xcconfig */,
+				DF58D317E47BF428EF6A2569 /* Pods-LKVCKit_Tests.release.xcconfig */,
 			);
 			name = Pods;
 			path = Pods;
@@ -106,11 +106,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 607FACF21AFB9204008FA782 /* Build configuration list for PBXNativeTarget "LKVCKit_Tests" */;
 			buildPhases = (
-				9F368E83A1917970FA540385 /* [CP] Check Pods Manifest.lock */,
+				C1103099630033B48B74C7FE /* [CP] Check Pods Manifest.lock */,
 				607FACE11AFB9204008FA782 /* Sources */,
 				607FACE21AFB9204008FA782 /* Frameworks */,
 				607FACE31AFB9204008FA782 /* Resources */,
-				F27F94E6CB8DB51B3917E3AC /* [CP] Embed Pods Frameworks */,
+				34DD8E22350BD3C0258B7A52 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -168,29 +168,7 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		9F368E83A1917970FA540385 /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-LKVCKit_Tests-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		F27F94E6CB8DB51B3917E3AC /* [CP] Embed Pods Frameworks */ = {
+		34DD8E22350BD3C0258B7A52 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -212,6 +190,28 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-LKVCKit_Tests/Pods-LKVCKit_Tests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C1103099630033B48B74C7FE /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-LKVCKit_Tests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -333,7 +333,7 @@
 		};
 		607FACF31AFB9204008FA782 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 269FF0E1855CF07A035DEE65 /* Pods-LKVCKit_Tests.debug.xcconfig */;
+			baseConfigurationReference = CC0481A78D0C876C95B27B81 /* Pods-LKVCKit_Tests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				FRAMEWORK_SEARCH_PATHS = (
@@ -354,7 +354,7 @@
 		};
 		607FACF41AFB9204008FA782 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = BA7913FD31A20785EDC639DC /* Pods-LKVCKit_Tests.release.xcconfig */;
+			baseConfigurationReference = DF58D317E47BF428EF6A2569 /* Pods-LKVCKit_Tests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				FRAMEWORK_SEARCH_PATHS = (

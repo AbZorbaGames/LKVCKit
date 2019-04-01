@@ -3,7 +3,7 @@
 //  Ents
 //
 //  Created by Georges Boumis on 13/06/2017.
-//  Copyright © 2016-2019 Georges Boumis.
+//  Copyright © 2016-2017 Georges Boumis.
 //  Licensed under MIT (https://github.com/averello/Ents/blob/master/LICENSE)
 //
 
@@ -15,7 +15,7 @@ public extension BidirectionalCollection {
     /// position equal to the last valid subscript argument.
     ///
     /// If the set is empty, `endIndex` is equal to `startIndex`.
-    public var lastIndex: Index {
+    var lastIndex: Index {
         return self.index(self.endIndex, offsetBy: -1)
     }
 }

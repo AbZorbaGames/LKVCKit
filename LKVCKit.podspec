@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'LKVCKit'
-  s.version          = '2.3'
+  s.version          = '2.4'
   s.summary          = 'A very basic and simplistic Key-Value Coding implementation for Swift.'
 
 # This description is used to generate tags and improve search results.

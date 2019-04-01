@@ -3,18 +3,16 @@
 //  Ents
 //
 //  Created by Georges Boumis on 29/08/2016.
-//  Copyright © 2016-2019 Georges Boumis.
+//  Copyright © 2016-2017 Georges Boumis.
 //  Licensed under MIT (https://github.com/averello/Ents/blob/master/LICENSE)
 //
 
-#if canImport(QuartzCore) && canImport(CoreGraphics)
 import QuartzCore
-import CoreGraphics
 
 public extension CALayer {
     
     /// Computes a new point of a given postion using a given ancorPoint.
-    final public func point(ofPosition position: CGPoint,
+    final func point(ofPosition position: CGPoint,
                       withAnchorPoint anchorPoint: CGPoint) -> CGPoint {
         var newPoint = CGPoint(x: self.bounds.size.width * anchorPoint.x,
                                y: self.bounds.size.height * anchorPoint.y)
@@ -36,13 +34,13 @@ public extension CALayer {
     
     /// Computes a new point that describes the `position` of the layer if the given
     /// anchorPoing was to be used.
-    final public func position(ofAnchorPoint anchorPoint: CGPoint) -> CGPoint {
+    final func position(ofAnchorPoint anchorPoint: CGPoint) -> CGPoint {
         return self.point(ofPosition: self.position, withAnchorPoint: anchorPoint)
     }
     
     /// changes the anchorPoing of this instance of `CALayer` without repositioning
     /// the layer.
-    final public func setAnchorPointWithoutMoving(_ anchorPoint: CGPoint, implicit: Bool = false) {
+    final func setAnchorPointWithoutMoving(_ anchorPoint: CGPoint, implicit: Bool = false) {
         let position = self.position(ofAnchorPoint: anchorPoint)
 
         if implicit {
@@ -58,21 +56,16 @@ public extension CALayer {
     }
 }
 
-#if canImport(UIKit)
-import UIKit
 #if DEBUG
-public extension CALayer {
-    public func debugQuickLookObject() -> AnyObject? {
-        let size = self.bounds.size
-        UIGraphicsBeginImageContext(size)
-        let context = UIGraphicsGetCurrentContext()
-        self.render(in: context!)
-        let image = UIGraphicsGetImageFromCurrentImageContext()
-        UIGraphicsEndImageContext()
-        return image
+    public extension CALayer {
+        func debugQuickLookObject() -> AnyObject? {
+            let size = self.bounds.size
+            UIGraphicsBeginImageContext(size)
+            let context = UIGraphicsGetCurrentContext()
+            self.render(in: context!)
+            let image = UIGraphicsGetImageFromCurrentImageContext()
+            UIGraphicsEndImageContext()
+            return image
+        }
     }
-}
-#endif
-#endif
-
 #endif

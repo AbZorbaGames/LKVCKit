@@ -38,13 +38,13 @@ internal struct LKVCUndefinedKeyRespondingStrategy {
 		let message = "\"\(type(of: (object) as Any))\"'s key: \"\(key)\" is undefined! We are in DEBUG mode so we CRASH!"
 		DebugReleaseBlock(debug: {
             Foundation.Thread.callStackSymbols.forEach { symbol in
-                print("\t\(symbol.1)")
+                print("\t\(symbol)")
             }
 			fatalError(message)
 			}, release: {
                 print(message)
                 Foundation.Thread.callStackSymbols.forEach { symbol in
-                    print("\t\(symbol.1)")
+                    print("\t\(symbol)")
                 }
 		})
 	}

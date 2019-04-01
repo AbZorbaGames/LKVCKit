@@ -3,14 +3,11 @@
 //  Ents
 //
 //  Created by Georges Boumis on 06/09/2016.
-//  Copyright © 2016-2019 Georges Boumis.
+//  Copyright © 2016-2017 Georges Boumis.
 //  Licensed under MIT (https://github.com/averello/Ents/blob/master/LICENSE)
 //
 
 import Foundation
-#if canImport(QuartzCore) && canImport(CoreFoundation)
-import QuartzCore
-import CoreFoundation
 
 public func NoImplicitAnimation(_ block: () throws -> Void) rethrows {
     CATransaction.begin(); defer { CATransaction.commit() }
@@ -23,5 +20,3 @@ public func ImplicitAnimation(withDuration duration: CFTimeInterval, _ block: ()
     CATransaction.setAnimationDuration(duration)
     try block()
 }
-
-#endif

@@ -1,27 +1,27 @@
 PODS:
-  - Ents (3.2.6)
-  - LKVCKit (2.3):
+  - Ents (3.1.7)
+  - LKVCKit (2.4):
     - Ents
 
 DEPENDENCIES:
-  - Ents (from `https://github.com/averello/Ents.git`)
+  - Ents (from `https://github.com/AbZorbaGames/Ents.git`)
   - LKVCKit (from `../`)
 
 EXTERNAL SOURCES:
   Ents:
-    :git: https://github.com/averello/Ents.git
+    :git: https://github.com/AbZorbaGames/Ents.git
   LKVCKit:
     :path: "../"
 
 CHECKOUT OPTIONS:
   Ents:
-    :commit: 764a5dd0cfb8b6d0a5ad244c05d2c0600be3b799
-    :git: https://github.com/averello/Ents.git
+    :commit: 8bd7e496108f43a32b088dc0bde148f26edc3917
+    :git: https://github.com/AbZorbaGames/Ents.git
 
 SPEC CHECKSUMS:
-  Ents: 39eb8615ed007b620fce7222659e76495e4b18dd
-  LKVCKit: 052a0a22780dbd2e234a6b7f8e7c20cd65ee836c
+  Ents: 646f2a5459fb5b3cbbdb8a21bb8977e75a24e3b5
+  LKVCKit: efd3ee0abd9d73aeed27d51f0f8982d385c2d368
 
-PODFILE CHECKSUM: f52e59dba986e169e6a3a8396234cea703e5c883
+PODFILE CHECKSUM: 144ced8d27f1fa52dc2327944f67757e66db2ebe
 
 COCOAPODS: 1.6.0
