@@ -3,11 +3,14 @@
 //  Ents
 //
 //  Created by Georges Boumis on 29/08/2016.
-//  Copyright © 2016-2017 Georges Boumis.
+//  Copyright © 2016-2019 Georges Boumis.
 //  Licensed under MIT (https://github.com/averello/Ents/blob/master/LICENSE)
 //
 
+import Foundation
+#if canImport(CoreGraphics) && canImport(UIKit)
 import UIKit
+import CoreGraphics
 
 public extension UIView {
     
@@ -53,3 +56,5 @@ public extension UIView {
         self.transform = transform
     }
 }
+
+#endif

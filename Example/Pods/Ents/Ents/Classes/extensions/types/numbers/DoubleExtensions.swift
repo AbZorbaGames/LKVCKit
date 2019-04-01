@@ -3,11 +3,13 @@
 //  Ents
 //
 //  Created by Georges Boumis on 26/07/2016.
-//  Copyright © 2016-2017 Georges Boumis.
+//  Copyright © 2016-2019 Georges Boumis.
 //  Licensed under MIT (https://github.com/averello/Ents/blob/master/LICENSE)
 //
 
 import Foundation
+#if canImport(QuartzCore)
+import QuartzCore
 
 public extension Double {
     
@@ -16,3 +18,5 @@ public extension Double {
         return QuartzCore.CGFloat(self)
     }
 }
+
+#endif

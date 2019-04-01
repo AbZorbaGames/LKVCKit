@@ -7,6 +7,7 @@
 //
 
 import Foundation
+#if canImport(CoreGraphics) && canImport(UIKit)
 import UIKit
 
 public extension UIOffset {
@@ -75,3 +76,5 @@ public extension UIOffset {
         return o
     }
 }
+
+#endif

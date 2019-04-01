@@ -1,12 +1,14 @@
 //
 //  CGRectRounding.swift
-//  UIViewPosition
+//  Ents
 //
 //  Created by Georges Boumis on 12/04/2016.
-//  Copyright © 2016-2017 Georges Boumis.
+//  Copyright © 2016-2019 Georges Boumis.
 //  Licensed under MIT (https://github.com/averello/Ents/blob/master/LICENSE)
 //
 
+import Foundation
+#if canImport(CoreGraphics)
 import CoreGraphics
 
 infix operator ◊ : AdditionPrecedence
@@ -533,3 +535,5 @@ public extension CGRect {
         self = self.applying(t)
     }
 }
+
+#endif

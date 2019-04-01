@@ -3,12 +3,13 @@
 //  Ents
 //
 //  Created by Georges Boumis on 05/09/2016.
-//  Copyright © 2016-2017 Georges Boumis.
+//  Copyright © 2016-2019 Georges Boumis.
 //  Licensed under MIT (https://github.com/averello/Ents/blob/master/LICENSE)
 //
 
-import Foundation
+#if canImport(QuartzCore) && canImport(UIKit)
 import QuartzCore
+import UIKit
 
 public final class DisplayLinkBlock {
 	public typealias DisplayLinkLoopBlock = (TimeInterval) -> Void
@@ -112,3 +113,5 @@ extension DisplayLinkBlock {
                        object: nil)
     }
 }
+
+#endif

@@ -1,12 +1,14 @@
 //
 //  CGPointRounding.swift
-//  UIViewPosition
+//  Ents
 //
 //  Created by Georges Boumis on 12/04/2016.
-//  Copyright © 2016-2017 Georges Boumis.
+//  Copyright © 2016-2019 Georges Boumis.
 //  Licensed under MIT (https://github.com/averello/Ents/blob/master/LICENSE)
 //
 
+import Foundation
+#if canImport(CoreGraphics)
 import CoreGraphics
 
 /// Compose two `CGFloat` to form a point operator
@@ -118,14 +120,6 @@ public extension CGPoint {
         var point = self
         point.translate(horizontally: dx)
         return point
-    }
-}
-
-public extension CGPoint {
-    
-    /// creates a point translated by the given offest
-    public func offseted(_ offset: UIOffset) -> CGPoint {
-        return self.translatedBy(dx: offset.horizontal, dy: offset.vertical)
     }
 }
 
@@ -261,3 +255,17 @@ public extension CGPoint {
         self = self.applying(t)
     }
 }
+
+#if canImport(UIKit)
+import UIKit
+
+public extension CGPoint {
+    
+    /// creates a point translated by the given offest
+    public func offseted(_ offset: UIOffset) -> CGPoint {
+        return self.translatedBy(dx: offset.horizontal, dy: offset.vertical)
+    }
+}
+#endif
+
+#endif

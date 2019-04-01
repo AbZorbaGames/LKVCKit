@@ -3,11 +3,13 @@
 //  Ents
 //
 //  Created by Georges Boumis on 13/11/2017.
-//  Copyright © 2016-2017 Georges Boumis.
+//  Copyright © 2016-2019 Georges Boumis.
 //  Licensed under MIT (https://github.com/averello/Ents/blob/master/LICENSE)
 //
 
-import Foundation
+#if canImport(UIKit)
+import UIKit
+import CoreGraphics
 
 fileprivate extension UIView {
     
@@ -92,15 +94,28 @@ public extension UIView {
             view1[keyPath: keyPath] = converter(v2, view1, view2)
             } as LayoutPropertyDescription<V, V>
     }
-}
 
+    /// Combines/Chains two `LayoutPropertyConverter` together.
+    ///
+    /// - parameter a: a property converter
+    /// - parameter b: another property converter
+    /// - returns: A property converter that uses the result of `a` as the input
+    /// of `b` to provide combined/chained final result.
+    public static func combine<Property, A, B>(_ a: @escaping LayoutPropertyConverter<Property, A, B>,
+                                               _ b: @escaping LayoutPropertyConverter<Property, A, B>)
+        -> LayoutPropertyConverter<Property, A, B>
+    {
+        return { (property: Property, view1: A, view2: B) in
+            return b(a(property, view1, view2), view1, view2)
+        }
+    }
+}
 
 public extension UIView {
     
     public typealias AnyLayoutPropertyDescription = LayoutPropertyDescription<UIView, UIView>
     public typealias AnyHierarchicalLayoutPropertyDescription = AnyLayoutPropertyDescription
     public typealias AnyLayoutPropertyConverter<Property> = LayoutPropertyConverter<Property, UIView, UIView>
-    
 }
 
 public extension UIView {
@@ -208,7 +223,6 @@ public extension UIView {
     public static var equalBottomRight: AnyHierarchicalLayoutPropertyDescription {
         return UIView.equal(\.frameBottomRight, \.ownBottomRight)
     }
-    
 }
 
 public extension UIView {
@@ -229,7 +243,6 @@ public extension UIView {
     public static var equalCenters: AnyHierarchicalLayoutPropertyDescription {
         return UIView.equal(\.center, \.ownCenter)
     }
-    
 }
 
 public extension UIView {
@@ -240,7 +253,6 @@ public extension UIView {
     public static var equalFrameSizes: AnyLayoutPropertyDescription {
         return UIView.equal(\.frameSize)
     }
-    
 }
 
 public extension UIView {
@@ -371,3 +383,4 @@ public extension UIView {
     }
 }
 
+#endif

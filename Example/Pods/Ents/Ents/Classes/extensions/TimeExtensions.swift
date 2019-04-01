@@ -3,7 +3,7 @@
 //  Ents
 //
 //  Created by Georges Boumis on 19/08/2016.
-//  Copyright © 2016-2017 Georges Boumis.
+//  Copyright © 2016-2019 Georges Boumis.
 //  Licensed under MIT (https://github.com/averello/Ents/blob/master/LICENSE)
 //
 
@@ -18,6 +18,9 @@ public extension TimeInterval {
     public static let zero: TimeInterval = TimeInterval(0)
     /// the instant time interval == 1ms
     public static let instantly: TimeInterval = TimeInterval(1)
+
+    /// one frame time, 16ms on a 60fps device
+    public static let oneFrame: TimeInterval = TimeInterval(16)
 
     /// Returns its value in milliseconds
     /// - note: The caller should know wether the time interval is in seconds

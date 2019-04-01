@@ -3,11 +3,13 @@
 //  Ents
 //
 //  Created by Georges Boumis on 29/08/2016.
-//  Copyright © 2016-2017 Georges Boumis.
+//  Copyright © 2016-2019 Georges Boumis.
 //  Licensed under MIT (https://github.com/averello/Ents/blob/master/LICENSE)
 //
 
+#if canImport(QuartzCore) && canImport(CoreGraphics)
 import QuartzCore
+import CoreGraphics
 
 public extension CALayer {
     
@@ -56,16 +58,21 @@ public extension CALayer {
     }
 }
 
+#if canImport(UIKit)
+import UIKit
 #if DEBUG
-    public extension CALayer {
-        public func debugQuickLookObject() -> AnyObject? {
-            let size = self.bounds.size
-            UIGraphicsBeginImageContext(size)
-            let context = UIGraphicsGetCurrentContext()
-            self.render(in: context!)
-            let image = UIGraphicsGetImageFromCurrentImageContext()
-            UIGraphicsEndImageContext()
-            return image
-        }
+public extension CALayer {
+    public func debugQuickLookObject() -> AnyObject? {
+        let size = self.bounds.size
+        UIGraphicsBeginImageContext(size)
+        let context = UIGraphicsGetCurrentContext()
+        self.render(in: context!)
+        let image = UIGraphicsGetImageFromCurrentImageContext()
+        UIGraphicsEndImageContext()
+        return image
     }
+}
+#endif
+#endif
+
 #endif

@@ -33,7 +33,7 @@ public protocol LightKVC {
 }
 
 public extension LightKVC {
-    public mutating func set(valuesForKeysWithDictionary dictionary: [String : Any]) {
+    mutating func set(valuesForKeysWithDictionary dictionary: [String : Any]) {
         for (key, value) in dictionary {
             do {
                 try self.set(value: value, forKey: key)
@@ -43,15 +43,15 @@ public extension LightKVC {
         }
     }
 
-    public func set(value: Any?, forUndefinedKey key: String) {
+    func set(value: Any?, forUndefinedKey key: String) {
         LKVCUndefinedKeyRespondingStrategy(key: key, value: value).handle(self)
     }
 
-    public func value(forKey key: String) throws -> Any {
+    func value(forKey key: String) throws -> Any {
         throw LightKVCError.undefinedKey(key: key, value: nil)
     }
 
-    public mutating func set(value: Any?, forKey key: String) throws {
+    mutating func set(value: Any?, forKey key: String) throws {
         throw LightKVCError.undefinedKey(key: key, value: value)
     }
 }

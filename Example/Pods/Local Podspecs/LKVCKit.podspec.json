@@ -1,6 +1,6 @@
 {
   "name": "LKVCKit",
-  "version": "2.2",
+  "version": "2.3",
   "summary": "A very basic and simplistic Key-Value Coding implementation for Swift.",
   "description": "TODO: Add long description of the pod here.",
   "homepage": "https://github.com/averello/LKVCKit",
@@ -13,14 +13,14 @@
   },
   "source": {
     "git": "https://github.com/averello/LKVCKit.git",
-    "tag": "2.2"
+    "tag": "2.3"
   },
   "platforms": {
     "ios": "8.0"
   },
   "source_files": "LKVCKit/Classes/**/*",
   "xcconfig": {
-    "SWIFT_VERSION": "4.0"
+    "SWIFT_VERSION": "4.2"
   },
   "dependencies": {
     "Ents": [

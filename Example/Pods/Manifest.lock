@@ -1,6 +1,6 @@
 PODS:
-  - Ents (3.1.1)
-  - LKVCKit (2.2):
+  - Ents (3.2.6)
+  - LKVCKit (2.3):
     - Ents
 
 DEPENDENCIES:
@@ -15,13 +15,13 @@ EXTERNAL SOURCES:
 
 CHECKOUT OPTIONS:
   Ents:
-    :commit: 2d6d8a352bc35be340a56929da21e4ed9cfe4ce6
+    :commit: 764a5dd0cfb8b6d0a5ad244c05d2c0600be3b799
     :git: https://github.com/averello/Ents.git
 
 SPEC CHECKSUMS:
-  Ents: 8c03f9a801f0677cd6b2f2e00e9ad03e0a195d84
-  LKVCKit: 77d8b644f9ed1e174777ec94abdb4e4ffe8f9c3e
+  Ents: 39eb8615ed007b620fce7222659e76495e4b18dd
+  LKVCKit: 052a0a22780dbd2e234a6b7f8e7c20cd65ee836c
 
 PODFILE CHECKSUM: f52e59dba986e169e6a3a8396234cea703e5c883
 
-COCOAPODS: 1.5.3
+COCOAPODS: 1.6.0

@@ -3,11 +3,13 @@
 //  Ents
 //
 //  Created by Georges Boumis on 26/08/16.
-//  Copyright © 2016-2017 Georges Boumis.
+//  Copyright © 2016-2019 Georges Boumis.
 //  Licensed under MIT (https://github.com/averello/Ents/blob/master/LICENSE)
 //
 
-import Foundation
+#if canImport(QuartzCore) && canImport(CoreGraphics)
+import QuartzCore
+import CoreGraphics
 
 public extension CATransform3D {
     
@@ -139,3 +141,5 @@ extension CATransform3D: Equatable {
         return CATransform3DEqualToTransform(lhs, rhs)
     }
 }
+
+#endif

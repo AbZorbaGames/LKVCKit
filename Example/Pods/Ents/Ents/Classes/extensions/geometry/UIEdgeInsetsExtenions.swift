@@ -7,7 +7,9 @@
 //
 
 import Foundation
+#if canImport(CoreGraphics) && canImport(UIKit)
 import UIKit
+import CoreGraphics
 
 public extension UIEdgeInsets {
     
@@ -95,3 +97,5 @@ public extension UIEdgeInsets {
                             right: 0)
     }
 }
+
+#endif
